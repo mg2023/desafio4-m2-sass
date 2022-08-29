@@ -3,6 +3,13 @@
 //
 
 .card {
+
+
+  // modificacion para usar @extend de acuerdo al requerimiento del punto 3 del desafio 4, modulo2.
+
+  @extend .bg-dark;
+  @extend .text-light;
+
   // scss-docs-start card-css-vars
   --#{$prefix}card-spacer-y: #{$card-spacer-y};
   --#{$prefix}card-spacer-x: #{$card-spacer-x};

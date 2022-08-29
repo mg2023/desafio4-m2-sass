@@ -7,50 +7,28 @@
   <title>Probando Sass</title>
 
   <link rel="stylesheet" href="assets/css/reset.css" />
+
+<!-- (Req 1) Se agrega el archivo bootstrap.css como resultado de la compilacion con ScoutAPP, de los archivos Sass de bootstrap -->
+<!-- (Req 4)Se modifico el archivo _variables, lineas 311 y 326 para agregar el color purple-->
+<!-- (Req 3) Se modifico el archivo _card para hacer uso de @extend y reutilizar los estilos de la clase .bg-dark y .text-light -->
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
+
+  <!-- (Req 2) Se agrega arvhivo main para hacer import de la fuente Qwitcher Grypen, requerimiento 2 del desafio-->
   <link rel="stylesheet" href="assets/css/main.css" />
-
-
 
 </head>
 <body>
   <div class="card" style="width: 18rem;">
   <img src="assets/img/imagen-sass.PNG" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title text-purple">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  
 
-    <!-- Utilizacion del theme purple -->
+    <!-- Utilizacion del theme purple para el background-->
+    <!-- Se modifica la clase btn, usando @extend .text-light; para lograr el color del texto -->
     <a href="#" class="btn btn-purple">Go somewhere</a>
   </div>
 </div>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Probando media queries</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/estilos.css" />
-
-    <script
-      src="https://kit.fontawesome.com/20eec21020.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
- 
-  </body>
-</html>
- -->

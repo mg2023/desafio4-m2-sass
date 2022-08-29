@@ -3,6 +3,10 @@
 //
 
 .btn {
+
+//Modificacion de acuerdo al desafio 4, modulo2.
+  @extend .text-light;
+
   // scss-docs-start btn-css-vars
   --#{$prefix}btn-padding-x: #{$btn-padding-x};
   --#{$prefix}btn-padding-y: #{$btn-padding-y};
